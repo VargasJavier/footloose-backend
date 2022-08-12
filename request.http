@@ -1,0 +1,62 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+
+GET http://localhost:9000/api/favorites/0 HTTP/1.1
+
+###
+
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Javier Alejandro",
+  "lastname": "Vargas Mexico",
+  "phone": "923200599",
+  "genrer": 1,
+  "email": "jabo94454@gmail.com",
+  "password": "123456"
+}
+###
+DELETE http://localhost:9000/api/deleteMusic/1428593452 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  //OBJETO
+}
+
+###
+
+POST http://localhost:9000/api/auth HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "jabo94454@gmail.com",
+  "password": "123456"
+}
+
+###
+
+GET http://localhost:9000/api/addFavorites/10/52 HTTP/1.1
+
+###
+
+GET http://localhost:9000/api/favorites/10 HTTP/1.1
+
+###
+
+POST http://localhost:9000/api/addMusic HTTP/1.1
+Content-Type: application/json
+
+{
+  "idmusic": "4564216",
+  "name": "Givenchy",
+  "albumname": "sadasd",
+  "albumphoto": "www.foto.jpg",
+  "preview": "jabo94454@gmail.com",
+  "artist": "DUKI"
+}
